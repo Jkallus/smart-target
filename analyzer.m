@@ -26,7 +26,7 @@ overlap = 200; % Overlap between consecutive windows
 figure;
 
 % Subplot 1: Original signal
-subplot(2, 1, 1);
+%subplot(2, 1, 1);
 plot(time, bl_acceleration);
 hold;
 plot(time, tr_acceleration);
@@ -35,20 +35,20 @@ xlabel('Time (seconds)');
 ylabel('Acceleration (m/s^2)');
 legend();
 
-% Subplot 2: Spectrogram
-subplot(2, 1, 2);
-
-% Using the spectrogram function
-spectrogram(bl_acceleration, windowSize, overlap, [], samplingFrequency, 'yaxis');
-
-% Add labels and title
-title('Spectrogram of Acceleration Signal');
-xlabel('Time (seconds)');
-ylabel('Frequency (Hz)');
-
-% You can customize the color map if needed
-colormap('jet');
-
-% Show colorbar
-colorbar;
+% % Subplot 2: Spectrogram
+% subplot(2, 1, 2);
+% 
+% % Using the spectrogram function
+% spectrogram(bl_acceleration, windowSize, overlap, [], samplingFrequency, 'yaxis');
+% 
+% % Add labels and title
+% title('Spectrogram of Acceleration Signal');
+% xlabel('Time (seconds)');
+% ylabel('Frequency (Hz)');
+% 
+% % You can customize the color map if needed
+% colormap('jet');
+% 
+% % Show colorbar
+% colorbar;
 
